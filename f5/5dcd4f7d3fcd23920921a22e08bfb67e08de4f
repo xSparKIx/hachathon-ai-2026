@@ -1,0 +1,19 @@
+test.js
+  s_d2128c306b7961::t_a492766c26dad1 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "f55dcd4f7d3fcd23920921a22e08bfb67e08de4f",
+  "prompts": {},
+  "sessions": {
+    "s_d2128c306b7961": {
+      "agent_id": {
+        "tool": "qwen-code",
+        "id": "8ca06ff4-c475-4240-a8c1-7c34a0d68d70",
+        "model": "qwen-code"
+      },
+      "human_author": "SparKI <sparki.projects@yandex.ru>"
+    }
+  }
+}
