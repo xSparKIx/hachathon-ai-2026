@@ -1,0 +1,33 @@
+{
+  "$version": 4,
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "WriteFile|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"type\":\"human\",\"repo_working_dir\":\".\"}' | git ai checkpoint agent-v1 --hook-input stdin",
+            "name": "git-ai-pre-checkpoint",
+            "async": false,
+            "timeout": 10000
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "WriteFile|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .qwen/hooks/git-ai-post.js",
+            "name": "git-ai-post-checkpoint",
+            "async": false,
+            "timeout": 10000
+          }
+        ]
+      }
+    ]
+  }
+}
