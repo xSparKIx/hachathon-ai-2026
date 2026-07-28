@@ -1,0 +1,35 @@
+test.js
+  s_571b20d2d8a8ad::t_913899e5aecb77 4,7-11
+  s_d2128c306b7961::t_db3a4a3948996a 12
+.qwen/settings.json
+  h_3922800efeddab 1-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "5d1697255d28609eb473baec06a8f21db0d2fa22",
+  "prompts": {},
+  "humans": {
+    "h_3922800efeddab": {
+      "author": "SparKI <sparki.projects@yandex.ru>"
+    }
+  },
+  "sessions": {
+    "s_571b20d2d8a8ad": {
+      "agent_id": {
+        "tool": "qwen-code",
+        "id": "test-123",
+        "model": "qwen-code"
+      },
+      "human_author": "SparKI <sparki.projects@yandex.ru>"
+    },
+    "s_d2128c306b7961": {
+      "agent_id": {
+        "tool": "qwen-code",
+        "id": "8ca06ff4-c475-4240-a8c1-7c34a0d68d70",
+        "model": "qwen-code"
+      },
+      "human_author": "SparKI <sparki.projects@yandex.ru>"
+    }
+  }
+}
